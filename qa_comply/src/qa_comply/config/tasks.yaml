@@ -1,0 +1,18 @@
+controls_task:
+  description: >
+    Compliance controle specialist reviews the provided controls and related documents and provide scope of 
+    assurance and audit work, including URLs and log ins for the UAT Tester that the controls. 
+    Summarize 
+    the current year is 2024.
+  expected_output: >
+    A list the test cases, URLs to test, log ins for the UAT tester.
+    Summary with whether the controls are OK or were observed to FAIL alongside the documentation.
+  agent: compliance_control_specialist
+
+uat_task:
+  description: >
+    Execute compliance control testing, QA, UAT and auditing and document findings. 
+    Make sure each control is tested and documented with determination whether the the control is in place and is effective.
+  expected_output: >
+    A full report and documentation outlining actions taken and results of testing and audit control by control. 
+  agent: uat_tester

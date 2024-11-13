@@ -1,0 +1,20 @@
+[project]
+name = "qa_comply"
+version = "0.1.0"
+description = "qa_comply using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.79.0,<1.0.0"
+]
+
+[project.scripts]
+qa_comply = "qa_comply.main:run"
+run_crew = "qa_comply.main:run"
+train = "qa_comply.main:train"
+replay = "qa_comply.main:replay"
+test = "qa_comply.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
