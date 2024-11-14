@@ -1,5 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from crewai_tools import SerperDevTool
 
 # Uncomment the following line to use an example of a custom tool
 # from qa_comply.tools.custom_tool import MyCustomTool
